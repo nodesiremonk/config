@@ -12,6 +12,16 @@
  alias ll='ls $LS_OPTIONS -l'
  alias l='ls $LS_OPTIONS -lA'
  alias chownwww='chown -R www-data:www-data /var/www'
+
+#for docker
+alias dcup='docker-compose up -d'
+alias dcupdate='docker-compose up -d --force-recreate --build'
+alias nginxreload='docker exec -it nginx nginx -s reload'
+alias cdw='cd /home/webdev/docker'
+alias dc='docker-compose'
+alias de='docker exec -it'
+alias chowncode='chown -R webdev:webdev /home/webdev/docker/code'
+
 #
 # Some more alias to avoid making mistakes:
 # alias rm='rm -i'
